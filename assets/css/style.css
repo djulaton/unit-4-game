@@ -2,65 +2,84 @@ body {
     background-image: url('../images/restaurant.png')
 }
 
-.row {
-     
-    margin: 2px;
-    display: flex;
-     
- } 
+.crystals {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
- h1 {
-    margin: 0 auto;
-    background-color: orange;
-    border: 2px solid black;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: -15px;
- }
+.crystal {
+	border: 1px solid green;
+	height: 200px;
+	width: 200px;
+	border-radius: 4px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	transition: box-shadow 1s;
+}
 
- #rules {
-    background-color: rgb(231, 212, 159);
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
- }
+.crystal:hover {
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: box-shadow 1s;
+}
 
- #randomNumber {
-    background-color: beige;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
+img {
+	width: 50px;
+
+}
+
+#header {
+    background-color: #ff7b00;
+    width: 25%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+h1, li, ul, h2 {
     text-align: center;
-    font-weight: 800;
-   
- }
+    font-weight: bold;
+}
 
- #w-lBox {
-    background-color: aquamarine;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding-top: 15px;
-    text-align: left;
- }
+h1 {
+    font-size: 30px;
+    color: white;
+}
 
- #constant-display {
+ul, li, h2 {
+    color: green;
+}
+
+.container-instructions {
+    background-color: rgb(247, 230, 184);
+    width: 50%;
+    padding: 20px;
+}
+
+.random {
+    background-color: rgb(18, 206, 18);
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+
+.winsAndLosses {
+    background-color: skyblue;
+    float: left;
+    width: 50%;
+    padding: 25px; 
+}
+
+#score-h2 {
+    color:white;
+}
+
+div {
+    clear: left;
+}
+
+.score, userTotal {
+    float: left;
     background-color: teal;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    width: 35%;
- }
-
- #currentTotal {
-    background-color: teal;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    width: 35%;
- }
-
- img {
-    padding: 5px;
- }
+    padding: 20px;
+    padding-bottom: 50px;
+} */
