@@ -31,10 +31,10 @@ var resetAndStart = function() {
     $(".crystals").empty();
 
     var images = [
-                'blue-gem.jpg',
-                'https://www.rd.com/wp-content/uploads/2017/08/02_crystal_Reasons-Why-You-Should-Give-Crystals-a-Try_364248173_Abra-Cadabraaa-380x254.jpg',
-                'https://www.rd.com/wp-content/uploads/2017/08/02_crystal_Reasons-Why-You-Should-Give-Crystals-a-Try_364248173_Abra-Cadabraaa-380x254.jpg',
-                'https://www.rd.com/wp-content/uploads/2017/08/02_crystal_Reasons-Why-You-Should-Give-Crystals-a-Try_364248173_Abra-Cadabraaa-380x254.jpg']
+                'assets/images/red-gem.jpg',
+                'assets/images/blue-gem.jpg',
+                'assets/images/yellow-gem.jpg',
+                'assets/images/green-gem.jpg']
 
     randomNumber = Math.floor(Math.random() * 101 + 19);
     $("#number-to-guess").text(randomNumber);
@@ -101,54 +101,3 @@ $(document).on('click', ".crystal", function () {
 
         }
 });
-
-
-//if the score is over, they lose and alert message pops up and resets game, increments a loss
-//if they match the randomNumber, they win and alert pops up and resets game and increments a win
-
-/*
-score.textContent = '0';
-
-var targetNums = [];
-
-for(var i=19; i<=120; i++){
-    targetNums.push(i);
-}
-
-//TODO: 
-//put target num on the screen
-
-var crystalNums = [];
-
-for(var i=1; i<=12; i++){
-    crystalNums.push(i);
-}
-
-var targetNum = targetNums[Math.floor(Math.random()*targetNums.length)];
-
-for(var i=0; i<4; i++){
-    //make crystal elems 
-    var crys = document.createElement('img');
-    crys.className = 'crys';
-    crys.src = "http://www.seirtec.org/wp-content/uploads/ktz/chandelier-wooden-original-wooden-orb-chandelier-metal-orb-detail-and-crystal-img-365tpo8zqm3wdy29u7nsp6.jpg";
-    crys.dataset.hiddenValue = crystalNums[Math.floor(Math.random()*crystalNums.length)];
-    //get value to attach to crystal elems
-
-    document.body.appendChild(crys);
-}
-
-document.addEventListener('click', function(e){
-    if(e.target.className == 'crys'){
-        //get value of current score
-        var curScore = Number(document.getElementById('score').innerHTML);
-        var crysVal = Number(e.target.dataset.hiddenValue);
-        var newScore = curScore + crysVal;
-
-        document.getElementById('score').innerHTML = newScore;
-        //add the data attribute value to the score
-
-        //
-    }
-})
-
-*/

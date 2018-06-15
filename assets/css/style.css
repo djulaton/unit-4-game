@@ -46,13 +46,14 @@ h1 {
 }
 
 ul, li, h2 {
-    color: green;
+    color: white;
 }
 
-.container-instructions {
+#instructions {
     background-color: rgb(247, 230, 184);
     width: 50%;
     padding: 20px;
+    border-style: outset;
 }
 
 .random {
@@ -62,11 +63,11 @@ ul, li, h2 {
     padding: 25px;
 }
 
-.winsAndLosses {
+#winsAndLosses {
     background-color: skyblue;
-    float: left;
     width: 50%;
-    padding: 25px; 
+    padding: 15px;
+    border: 1px dotted black;
 }
 
 #score-h2 {
@@ -77,9 +78,23 @@ div {
     clear: left;
 }
 
-.score, userTotal {
+/* .score, userTotal {
     float: left;
     background-color: teal;
     padding: 20px;
     padding-bottom: 50px;
 } */
+
+#numberGuess {
+    background-color: teal;
+    width: 50%;
+    margin-top: 10px;
+    padding: 25px;
+    border-style: outset;
+}
+
+#totalScore {
+    background-color: green;
+    border-style: outset;
+    width: 50%;
+}
