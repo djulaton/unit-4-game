@@ -33,6 +33,7 @@ img {
     width: 25%;
     padding: 20px;
     margin-bottom: 10px;
+    border: 1px solid black;
 }
 
 h1, li, ul, h2 {
